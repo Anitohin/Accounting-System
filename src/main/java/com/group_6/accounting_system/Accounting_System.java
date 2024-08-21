@@ -4,6 +4,8 @@
 
 package com.group_6.accounting_system;
 
+import Ledger.Ledger_Panel;
+
 /**
  *
  * @author ADMIN
@@ -11,6 +13,12 @@ package com.group_6.accounting_system;
 public class Accounting_System {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new Main().setVisible(true);
+                
+            }
+        });
     }
 }
