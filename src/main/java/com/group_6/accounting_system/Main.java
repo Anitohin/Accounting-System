@@ -92,12 +92,9 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
         loadPanel (new Inventory_Management());
-    }   
+    }//GEN-LAST:event_jButton2ActionPerformed
+   
     /**
      * @param args the command line arguments
      */
