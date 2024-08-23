@@ -28,115 +28,149 @@ public class Home1 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        dLegder = new javax.swing.JPanel();
+        dL1 = new javax.swing.JLabel();
+        dAccPay = new javax.swing.JPanel();
+        dL2 = new javax.swing.JLabel();
+        dPayroll = new javax.swing.JPanel();
+        dL3 = new javax.swing.JLabel();
+        dExpense = new javax.swing.JPanel();
+        dL4 = new javax.swing.JLabel();
+        dLogOut = new javax.swing.JPanel();
+        dL5 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(892, 593));
 
         jPanel1.setBackground(new java.awt.Color(7, 59, 76));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(7, 59, 76));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Expense Tracking");
-        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+        dLegder.setBackground(new java.awt.Color(11, 92, 118));
+        dLegder.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dLegderMouseClicked(evt);
+            }
+        });
+        dLegder.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        dL1.setBackground(new java.awt.Color(255, 255, 255));
+        dL1.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        dL1.setForeground(new java.awt.Color(255, 255, 255));
+        dL1.setText("General Ledger");
+        dLegder.add(dL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 140, 50));
+
+        jPanel1.add(dLegder, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 150, 50));
+
+        dAccPay.setBackground(new java.awt.Color(11, 92, 118));
+        dAccPay.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dAccPayMouseClicked(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(7, 59, 76));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("General Ledger");
-        jButton2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
+        dL2.setBackground(new java.awt.Color(255, 255, 255));
+        dL2.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        dL2.setForeground(new java.awt.Color(255, 255, 255));
+        dL2.setText("Account Payable");
 
-        jButton3.setBackground(new java.awt.Color(7, 59, 76));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Account Payable");
-        jButton3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        jButton4.setBackground(new java.awt.Color(7, 59, 76));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Payroll");
-        jButton4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-
-        jButton5.setBackground(new java.awt.Color(7, 59, 76));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Log Out");
-        jButton5.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(234, 153, 0), null));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton3)
-                            .addComponent(jButton2))
-                        .addGap(15, 15, 15))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                    .addContainerGap(27, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(17, 17, 17)))
+        javax.swing.GroupLayout dAccPayLayout = new javax.swing.GroupLayout(dAccPay);
+        dAccPay.setLayout(dAccPayLayout);
+        dAccPayLayout.setHorizontalGroup(
+            dAccPayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dAccPayLayout.createSequentialGroup()
+                .addGap(0, 10, Short.MAX_VALUE)
+                .addComponent(dL2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(99, 99, 99)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(150, 150, 150)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                    .addContainerGap(282, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(266, 266, 266)))
+        dAccPayLayout.setVerticalGroup(
+            dAccPayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(dL2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
+
+        jPanel1.add(dAccPay, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 150, 50));
+
+        dPayroll.setBackground(new java.awt.Color(11, 92, 118));
+        dPayroll.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dPayrollMouseClicked(evt);
+            }
+        });
+
+        dL3.setBackground(new java.awt.Color(255, 255, 255));
+        dL3.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        dL3.setForeground(new java.awt.Color(255, 255, 255));
+        dL3.setText("Payroll");
+
+        javax.swing.GroupLayout dPayrollLayout = new javax.swing.GroupLayout(dPayroll);
+        dPayroll.setLayout(dPayrollLayout);
+        dPayrollLayout.setHorizontalGroup(
+            dPayrollLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dPayrollLayout.createSequentialGroup()
+                .addContainerGap(40, Short.MAX_VALUE)
+                .addComponent(dL3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        dPayrollLayout.setVerticalGroup(
+            dPayrollLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(dL3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(dPayroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 150, 50));
+
+        dExpense.setBackground(new java.awt.Color(11, 92, 118));
+        dExpense.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dExpenseMouseClicked(evt);
+            }
+        });
+
+        dL4.setBackground(new java.awt.Color(255, 255, 255));
+        dL4.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        dL4.setForeground(new java.awt.Color(255, 255, 255));
+        dL4.setText("Expense Tracker");
+
+        javax.swing.GroupLayout dExpenseLayout = new javax.swing.GroupLayout(dExpense);
+        dExpense.setLayout(dExpenseLayout);
+        dExpenseLayout.setHorizontalGroup(
+            dExpenseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dExpenseLayout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addComponent(dL4, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        dExpenseLayout.setVerticalGroup(
+            dExpenseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(dL4, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(dExpense, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 150, 50));
+
+        dLogOut.setBackground(new java.awt.Color(11, 92, 118));
+        dLogOut.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dLogOutMouseClicked(evt);
+            }
+        });
+
+        dL5.setBackground(new java.awt.Color(255, 255, 255));
+        dL5.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        dL5.setForeground(new java.awt.Color(255, 255, 255));
+        dL5.setText("Log Out");
+
+        javax.swing.GroupLayout dLogOutLayout = new javax.swing.GroupLayout(dLogOut);
+        dLogOut.setLayout(dLogOutLayout);
+        dLogOutLayout.setHorizontalGroup(
+            dLogOutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dLogOutLayout.createSequentialGroup()
+                .addContainerGap(39, Short.MAX_VALUE)
+                .addComponent(dL5, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        dLogOutLayout.setVerticalGroup(
+            dLogOutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(dL5, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(dLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 500, 150, 50));
 
         jPanel2.setBackground(new java.awt.Color(7, 59, 76));
         jPanel2.setForeground(new java.awt.Color(7, 59, 76));
@@ -145,7 +179,7 @@ public class Home1 extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 692, Short.MAX_VALUE)
+            .addGap(0, 702, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -174,28 +208,51 @@ public class Home1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void dLegderMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dLegderMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        dL1.setVisible(true);
+        dL2.setVisible(false);
+        dL3.setVisible(false);
+        dL4.setVisible(false);
+        dL5.setVisible(false);
+        
+    }//GEN-LAST:event_dLegderMouseClicked
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void dAccPayMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dAccPayMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+        dL1.setVisible(false);
+        dL2.setVisible(true);
+        dL3.setVisible(false);
+        dL4.setVisible(false);
+        dL5.setVisible(false);
+    }//GEN-LAST:event_dAccPayMouseClicked
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here;
-    // Create and show the Account_Payable window
-    Account_Payable Account_Payable = new Account_Payable();  // Create an instance of AnotherForm
-        Account_Payable.setVisible(true);   
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void dPayrollMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dPayrollMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+        dL1.setVisible(false);
+        dL2.setVisible(false);
+        dL3.setVisible(true);
+        dL4.setVisible(false);
+        dL5.setVisible(false);
+    }//GEN-LAST:event_dPayrollMouseClicked
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void dExpenseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dExpenseMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+        dL1.setVisible(false);
+        dL2.setVisible(false);
+        dL3.setVisible(false);
+        dL4.setVisible(true);
+        dL5.setVisible(false);
+    }//GEN-LAST:event_dExpenseMouseClicked
+
+    private void dLogOutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dLogOutMouseClicked
+        // TODO add your handling code here:
+        dL1.setVisible(false);
+        dL2.setVisible(false);
+        dL3.setVisible(false);
+        dL4.setVisible(false);
+        dL5.setVisible(true);
+    }//GEN-LAST:event_dLogOutMouseClicked
 
     /**
      * @param args the command line arguments
@@ -233,11 +290,16 @@ public class Home1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JPanel dAccPay;
+    private javax.swing.JPanel dExpense;
+    private javax.swing.JLabel dL1;
+    private javax.swing.JLabel dL2;
+    private javax.swing.JLabel dL3;
+    private javax.swing.JLabel dL4;
+    private javax.swing.JLabel dL5;
+    private javax.swing.JPanel dLegder;
+    private javax.swing.JPanel dLogOut;
+    private javax.swing.JPanel dPayroll;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
