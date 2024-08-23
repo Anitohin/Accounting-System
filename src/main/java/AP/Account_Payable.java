@@ -41,7 +41,6 @@ public class Account_Payable extends javax.swing.JFrame {
             PreparedStatement stmt = con.prepareStatement(query);
             stmt.setString(1, clientName);
 
-            // Execute the query
             ResultSet rs = stmt.executeQuery();
 
             // Get the table model to update the jTable1
