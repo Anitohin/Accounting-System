@@ -33,7 +33,7 @@ public class Account_Payable extends javax.swing.JFrame {
 
     private void enterActionPerformed(java.awt.event.ActionEvent evt) {                                     
         try {
-            // Get the client name from jTextPane1
+           
             String clientName = jTextPane1.getText();
 
             // Prepare the SQL query to retrieve the ledger data for the specified client
